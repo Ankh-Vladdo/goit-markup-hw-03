@@ -2,7 +2,7 @@
   --primary-font: "Roboto", sans-serif;
   --secondary-font: "Raleway", sans-serif;
   --accent-color-iris: #4d5ae5;
-  --main-color-slate: #434455;
+  --primary-color-slate: #434455;
   --second-color-navy-blue: #2e2f42;
   --hover-color-ocean: #404bbf;
   --color-cloud: #f4f4fd;
@@ -16,7 +16,7 @@
 }
 .body {
   background-color: var(--color-white);
-  color: var(--main-color-slate);
+  color: var(--primary-color-slate);
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -61,7 +61,7 @@
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--main-color-slate);
+  color: var(--primary-color-slate);
 }
 .address:hover,
 .address:focus {
@@ -150,7 +150,7 @@
   letter-spacing: 0.02em;
   text-decoration: none;
   text-align: center;
-  color: var(--main-color-slate);
+  color: var(--primary-color-slate);
 }
 
 /* ?Footer */
@@ -212,6 +212,6 @@
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--main-color-slate);
+  color: var(--primary-color-slate);
   text-decoration: none;
 }
