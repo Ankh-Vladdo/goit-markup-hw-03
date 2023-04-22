@@ -24,11 +24,29 @@
   text-decoration: none;
   text-transform: none;
 }
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 .list {
   list-style: none;
   margin-top: 0;
   margin-bottom: 0;
 }
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+/* *Приховані заголовки */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -41,11 +59,12 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-/** Контейнер для стилізації */
 .container {
-  max-width: 1158px;
-  padding: 0 15px;
-  margin: 0 auto;
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
   outline: 2px solid greenyellow;
 }
 /*? Header section  */
