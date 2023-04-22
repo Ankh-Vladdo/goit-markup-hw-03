@@ -27,6 +27,7 @@
 .list {
   list-style: none;
   margin-top: 0;
+  margin-bottom: 0;
 }
 .visually-hidden {
   position: absolute;
@@ -40,10 +41,16 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
+.container {
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+  outline: 2px solid greenyellow;
+}
 /*? Header section  */
-.header{
-  border-bottom: 1px solid #E7E9FC}
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
 /* !Logo */
 .logo-left {
   font-family: "Raleway", sans-serif;
@@ -87,15 +94,17 @@
 /* ?Hero section */
 .hero {
   background-color: var(--second-color-navy-blue);
+  text-align: center;
 }
 .hero-title {
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
-  text-align: center;
   text-decoration: none;
   color: var(--color-white);
+  margin-top: 0;
+  margin-bottom: 48px;
 }
 .hero-button:is(:hover, :focus) {
   color: var(--color-white);
@@ -111,6 +120,10 @@
   cursor: pointer;
   background: var(--accent-color-iris);
   color: var(--color-white);
+  border-radius: 4px;
+  padding: 16px 32px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 /* ?About section  */
 .subtitle-about {
