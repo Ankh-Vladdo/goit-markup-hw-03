@@ -41,6 +41,7 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+/** Контейнер для стилізації */
 .container {
   max-width: 1158px;
   padding: 0 15px;
