@@ -37,6 +37,9 @@ ol {
   margin: 0;
   padding-left: 0;
 }
+img {
+  display: block;
+}
 /* *Внутрішні відступи у секції */
 .section {
   padding-top: 120px;
@@ -226,6 +229,7 @@ p {
 
 /* ?Team section  */
 .team-photo {
+  max-width: 264px;
   margin-bottom: 32px;
 }
 .team {
@@ -259,7 +263,7 @@ p {
   text-align: center;
 }
 .profession-text {
-  margin-bottom: 32px;
+  padding-bottom: 32px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -298,8 +302,8 @@ p {
   color: #f4f4fd;
 }
 
-/* ?Portfolio */
-/* !Menu filter button */
+/* !Portfolio */
+/* ?Menu filter button */
 .filter-button:hover,
 .filter-button:focus {
   color: white;
@@ -321,6 +325,16 @@ p {
   margin-right: 24px;
   margin-bottom: 72px;
 }
+
+/* ?Project Cards */
+.project-img {
+  max-width: 360px;
+  margin-bottom: 32px;
+}
+.project-subtitle {
+  padding-left: 16px;
+  margin-bottom: 8px;
+}
 .project-subtitle,
 .subtitle-second {
   font-weight: 500;
@@ -330,6 +344,8 @@ p {
   color: var(--secondary-text-color);
 }
 .project-text {
+  padding-left: 16px;
+  margin-bottom: 32px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
