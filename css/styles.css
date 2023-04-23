@@ -1,6 +1,9 @@
 h1,
 h2,
 h3,
+h4,
+h5,
+h6,
 p {
   margin: 0;
 }
@@ -44,28 +47,22 @@ img {
 :root {
   --primary-font: "Roboto", sans-serif;
   --secondary-font: "Raleway", sans-serif;
-  --accent-color-iris: #4d5ae5;
-  --primary-color-slate: #434455;
-  --second-color-navy-blue: #2e2f42;
-  --hover-color-ocean: #404bbf;
-  --color-cloud: #f4f4fd;
-  --color-grey: #2e2f42;
-  --color-white: #ffffff;
-  --color-green: #31d0aa;
-  --color-navy-blue-modal: #2e2f42;
-  --color-light-slate: #8e8f99;
-  --color-cornflower: #e7e9fc;
-  --color-dairy: #fcfcfc;
+
+  --primary-bg-color: #ffffff;
+  --secondary-bg-color: #2e2f42;
+  --tertiary-bg-color: #f4f4fd;
+  --primary-text-color: #434455;
+  --secondary-text-color: #2e2f42;
+  --accent-color: #4d5ae5;
+  --secondary-accent-color: #404bbf;
 }
 .body {
-  background-color: var(--color-white);
-  color: var(--primary-color-slate);
+  background-color: var(--primary-bg-color);
+  color: var(--primary-text-color);
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  text-decoration: none;
-  text-transform: none;
 }
 
 /*? Header section  */
@@ -81,10 +78,10 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-decoration: none;
-  color: var(--accent-color-iris);
+  color: var(--accent-color);
 }
 .logo-right {
-  color: var(--color-grey);
+  color: var(--secondary-text-color);
 }
 /* !Menu-nav */
 .menu-nav {
@@ -93,11 +90,11 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-decoration: none;
-  color: var(--color-grey);
+  color: var(--secondary-text-color);
 }
 .link:hover,
 .link:focus {
-  color: var(--hover-color-ocean);
+  color: var(--secondary-accent-color);
 }
 
 .address {
@@ -105,45 +102,58 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--primary-color-slate);
+  color: var(--primary-text-color);
+  margin-left: auto;
 }
 .address:hover,
 .address:focus {
-  color: var(--hover-color-ocean);
+  color: var(--secondary-accent-color);
 }
 
 /* ?Hero section */
 .hero {
-  background-color: var(--second-color-navy-blue);
-  text-align: center;
+  padding-top: 188px;
+  padding-bottom: 188px;
+  background-color: var(--secondary-bg-color);
 }
 .hero-title {
+  max-width: 496px;
+  margin-bottom: 48px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
-  text-decoration: none;
-  color: var(--color-white);
-  width: 496px;
+  text-align: center;
 }
-.hero-button:is(:hover, :focus) {
-  color: var(--color-white);
-  background-color: var(--hover-color-ocean);
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--secondary-accent-color);
+  color: white;
 }
 
 .hero-button {
+  display: block;
+  min-width: 169px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 0;
+  border-radius: 4px;
+  padding: 16px 32px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--accent-color);
+  color: #ffffff;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  letter-spacing: 0.04em;
+}
+.button {
   cursor: pointer;
-  background: var(--accent-color-iris);
-  color: var(--color-white);
-  border-radius: 4px;
-  padding: 16px 32px;
-  margin-top: 0;
-  margin-bottom: 0;
 }
 /* ?About section  */
 .subtitle-about {
@@ -153,7 +163,7 @@ img {
   letter-spacing: 0.02em;
   text-decoration: none;
   text-transform: none;
-  color: var(--color-grey);
+  color: var(--secondary-text-color);
 }
 
 .benefits-subtitle {
@@ -161,10 +171,10 @@ img {
   font-weight: 700;
   line-height: 1.11;
   letter-spacing: 0.02em;
+  text-align: center;
   text-decoration: none;
   text-transform: capitalize;
-  text-align: center;
-  color: var(--color-grey);
+  color: var(--secondary-text-color);
 }
 
 /* ?Team section  */
@@ -175,36 +185,35 @@ img {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
-  text-align: center;
   letter-spacing: 0.02em;
+  text-align: center;
   text-transform: capitalize;
   text-decoration: none;
-  color: var(--color-grey);
+  color: var(--secondary-text-color);
 }
 .team-item {
-  background-color: var(--color-white);
+  background-color: white;
+  border-radius: 0px 0px 4px 4px;
 }
 .subtitle-name {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  color: var(--color-grey);
+  color: var(--secondary-text-color);
 }
 .profession-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-decoration: none;
-  text-align: center;
-  color: var(--primary-color-slate);
+  color: var(--primary-text-color);
 }
 
 /* ?Footer */
 .footer {
-  background-color: var(--second-color-navy-blue);
+  background-color: var(--secondary-bg-color);
 }
 .logo-left link {
   font-family: "Raleway", sans-serif;
@@ -216,7 +225,7 @@ img {
   color: #4d5ae5;
 }
 .footer-logo-right {
-  color: var(--color-cloud);
+  color: #f4f4fd;
 }
 
 .footer-text {
@@ -224,14 +233,15 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-decoration: none;
-  color: var(--color-cloud);
+  color: #f4f4fd;
 }
 
 /* ?Portfolio */
 /* !Menu filter button */
-.filter-button:is(:hover, :focus) {
-  color: var(--color-white);
-  background-color: var(--hover-color-ocean);
+.filter-button:hover,
+.filter-button:focus {
+  color: white;
+  background-color: var(--secondary-accent-color);
 }
 
 .filter-button {
@@ -241,9 +251,8 @@ img {
   line-height: 1.5;
   letter-spacing: 0.04em;
   text-decoration: none;
-  color: var(--accent-color-iris);
-  background-color: var(--color-cloud);
-  cursor: pointer;
+  color: var(--accent-color);
+  background-color: var(--tertiary-bg-color);
 }
 .link {
   text-decoration: none;
@@ -255,12 +264,12 @@ img {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: var(--color-grey);
+  color: var(--secondary-text-color);
 }
 .project-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--primary-color-slate);
+  color: var(--primary-text-color);
   text-decoration: none;
 }
