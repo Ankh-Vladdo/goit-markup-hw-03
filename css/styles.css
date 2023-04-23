@@ -1,3 +1,16 @@
+:root {
+  --primary-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+  --primary-bg-color: #ffffff;
+  --secondary-bg-color: #2e2f42;
+  --tertiary-bg-color: #f4f4fd;
+  --primary-text-color: #434455;
+  --secondary-text-color: #2e2f42;
+  --accent-color: #4d5ae5;
+  --secondary-accent-color: #404bbf;
+}
+
+/* *Скидання стилів */
 h1,
 h2,
 h3,
@@ -7,20 +20,43 @@ h6,
 p {
   margin: 0;
 }
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
 }
 .list {
   list-style: none;
   margin-top: 0;
   margin-bottom: 0;
 }
+.link {
+  text-decoration: none;
+}
+ul, ol {
+  margin: 0;
+  padding-left: 0;
+}
+/* *Внутрішні відступи у секції */
 .section {
   padding-top: 120px;
   padding-bottom: 120px;
+}
+/* * Зовнішні відступи у тексті */
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+/* *Загальні умови для всіх контейнерів */
+.container {
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid greenyellow;
 }
 /* *Приховані заголовки */
 .visually-hidden {
@@ -35,27 +71,7 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.container {
-  width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  outline: 2px solid greenyellow;
-}
 
-:root {
-  --primary-font: "Roboto", sans-serif;
-  --secondary-font: "Raleway", sans-serif;
-
-  --primary-bg-color: #ffffff;
-  --secondary-bg-color: #2e2f42;
-  --tertiary-bg-color: #f4f4fd;
-  --primary-text-color: #434455;
-  --secondary-text-color: #2e2f42;
-  --accent-color: #4d5ae5;
-  --secondary-accent-color: #404bbf;
-}
 .body {
   background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
@@ -69,22 +85,35 @@ img {
 .header {
   border-bottom: 1px solid #e7e9fc;
 }
-/* !Logo */
+.header-flex {
+  display: flex;
+  align-items: center;
+}
 .logo-left {
+  margin-right: 76px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  color: var(--accent-color);
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  text-decoration: none;
-  color: var(--accent-color);
 }
 .logo-right {
   color: var(--secondary-text-color);
 }
-/* !Menu-nav */
-.menu-nav {
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+.nav-item:not(:last-child) {
+  margin-right: 40px;
+}
+.header-nav {
+  padding-top: 24px;
+  padding-bottom: 24px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -97,17 +126,21 @@ img {
   color: var(--secondary-accent-color);
 }
 
-.address {
+/* *Contacts */
+.header-contacts {
+  display: flex;
   font-style: normal;
+}
+.header-contacts:hover,
+.header-contacts:focus {
+  color: var(--secondary-accent-color);
+}
+.header-contacts-link {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--primary-text-color);
-  margin-left: auto;
-}
-.address:hover,
-.address:focus {
-  color: var(--secondary-accent-color);
 }
 
 /* ?Hero section */
@@ -161,11 +194,9 @@ img {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  text-decoration: none;
-  text-transform: none;
   color: var(--secondary-text-color);
 }
-
+/* ?Benefits section */
 .benefits-subtitle {
   font-size: 36px;
   font-weight: 700;
@@ -213,22 +244,27 @@ img {
 
 /* ?Footer */
 .footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
   background-color: var(--secondary-bg-color);
 }
 .logo-left link {
-  font-family: "Raleway", sans-serif;
+  display: inline-block;
+  margin-bottom: 24px;
+  color: #4d5ae5;
+  font-family: Raleway, sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #4d5ae5;
 }
 .footer-logo-right {
   color: #f4f4fd;
 }
 
 .footer-text {
+  width: 264px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
