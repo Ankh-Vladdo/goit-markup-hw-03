@@ -32,7 +32,8 @@ li {
 .link {
   text-decoration: none;
 }
-ul, ol {
+ul,
+ol {
   margin: 0;
   padding-left: 0;
 }
@@ -130,12 +131,15 @@ p {
 .header-contacts {
   display: flex;
   font-style: normal;
+  margin-left: auto;
 }
+
 .header-contacts:hover,
 .header-contacts:focus {
   color: var(--secondary-accent-color);
 }
 .header-contacts-link {
+  margin-right: 40px;
   padding-top: 24px;
   padding-bottom: 24px;
   color: var(--primary-text-color);
@@ -183,12 +187,15 @@ p {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  letter-spacing: 0.04em;
 }
 .button {
   cursor: pointer;
 }
 /* ?About section  */
+.about .list {
+  margin: right 24px;
+  margin-bottom: 120px;
+}
 .subtitle-about {
   font-size: 20px;
   font-weight: 500;
@@ -198,6 +205,7 @@ p {
 }
 /* ?Benefits section */
 .benefits-subtitle {
+  margin-bottom: 72px;
   font-size: 36px;
   font-weight: 700;
   line-height: 1.11;
@@ -206,6 +214,11 @@ p {
   text-decoration: none;
   text-transform: capitalize;
   color: var(--secondary-text-color);
+}
+.benefits-item {
+  max-width: 360px;
+  margin: right 24px;
+  margin-bottom: 120px;
 }
 
 /* ?Team section  */
@@ -225,6 +238,9 @@ p {
 .team-item {
   background-color: white;
   border-radius: 0px 0px 4px 4px;
+  margin: right 24px;
+  margin-bottom: 120px;
+  max-width: 264px;
 }
 .subtitle-name {
   font-weight: 500;
@@ -264,7 +280,7 @@ p {
 }
 
 .footer-text {
-  width: 264px;
+  max-width: 264px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -290,10 +306,11 @@ p {
   color: var(--accent-color);
   background-color: var(--tertiary-bg-color);
 }
-.link {
-  text-decoration: none;
+.filter-item {
+  max-width: 126px;
+  margin-right: 24px;
+  margin-bottom: 72px;
 }
-
 .project-subtitle,
 .subtitle-second {
   font-weight: 500;
@@ -308,4 +325,10 @@ p {
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
   text-decoration: none;
+}
+.project-item {
+  border: 1px solid #e7e9fc;
+  max-width: 360px;
+  margin-right: 24px;
+  margin-bottom: 48px;
 }
