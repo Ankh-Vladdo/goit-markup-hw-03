@@ -192,11 +192,14 @@ p {
   cursor: pointer;
 }
 /* ?About section  */
-.about .list {
+.about-item {
+  max-width: 264px;
   margin: right 24px;
   margin-bottom: 120px;
 }
+
 .subtitle-about {
+  margin-bottom: 8px;
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
@@ -222,6 +225,9 @@ p {
 }
 
 /* ?Team section  */
+.team-photo {
+  margin-bottom: 32px;
+}
 .team {
   background-color: #f4f4fd;
 }
@@ -243,19 +249,23 @@ p {
   max-width: 264px;
 }
 .subtitle-name {
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--secondary-text-color);
+  text-align: center;
 }
 .profession-text {
+  margin-bottom: 32px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--primary-text-color);
+  text-align: center;
 }
 
 /* ?Footer */
@@ -266,7 +276,7 @@ p {
 }
 .logo-left link {
   display: inline-block;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
   color: #4d5ae5;
   font-family: Raleway, sans-serif;
   font-weight: 800;
