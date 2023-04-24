@@ -52,6 +52,7 @@ p {
   margin-right: auto;
 }
 section {
+  padding-top: 120px;
   padding-bottom: 120px;
 }
 /* *Приховані заголовки */
