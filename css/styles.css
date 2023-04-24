@@ -39,6 +39,8 @@ ol {
 }
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 /* *Внутрішні відступи у секції */
 .section {
@@ -48,10 +50,6 @@ img {
 /* * Зовнішні відступи у тексті */
 p {
   display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
 }
 /* *Загальні умови для всіх контейнерів */
 .container {
@@ -96,8 +94,6 @@ p {
 /* ?Logo */
 .logo-left {
   margin-right: 76px;
-  padding-top: 24px;
-  padding-bottom: 24px;
   color: var(--accent-color);
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -145,8 +141,6 @@ p {
 }
 .header-contacts-link {
   margin-right: 40px;
-  padding-top: 24px;
-  padding-bottom: 24px;
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.5;
@@ -154,12 +148,12 @@ p {
 
 /* ?Hero section */
 .hero {
-  padding-top: 188px;
-  padding-bottom: 188px;
   background-color: var(--secondary-bg-color);
 }
 .hero-title {
   max-width: 496px;
+  padding-bottom: 48px;
+  padding-top: 188px;
   margin-bottom: 48px;
   margin-left: auto;
   margin-right: auto;
@@ -179,6 +173,7 @@ p {
 .hero-button {
   display: block;
   min-width: 169px;
+  padding-bottom: 188px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: 0;
   border-radius: 4px;
@@ -197,10 +192,10 @@ p {
   cursor: pointer;
 }
 /* ?About section  */
+
 .about-item {
   max-width: 264px;
   margin: right 24px;
-  margin-bottom: 120px;
 }
 
 .subtitle-about {
@@ -223,16 +218,19 @@ p {
   text-transform: capitalize;
   color: var(--secondary-text-color);
 }
-.benefits-item {
+.benefits-item:not(:last-child) {
   max-width: 360px;
   margin: right 24px;
   margin-bottom: 120px;
 }
 
 /* ?Team section  */
+.card-content {
+  padding: 32px 16px;
+}
+
 .team-photo {
   max-width: 264px;
-  margin-bottom: 32px;
 }
 .team {
   background-color: #f4f4fd;
@@ -247,7 +245,7 @@ p {
   text-decoration: none;
   color: var(--secondary-text-color);
 }
-.team-item {
+.team-item:not(:last-child) {
   background-color: white;
   border-radius: 0px 0px 4px 4px;
   margin: right 24px;
@@ -265,7 +263,6 @@ p {
   text-align: center;
 }
 .profession-text {
-  padding-bottom: 32px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -322,7 +319,7 @@ p {
   color: var(--accent-color);
   background-color: var(--tertiary-bg-color);
 }
-.filter-item {
+.filter-item:not(:last-child) {
   margin-right: 24px;
   margin-bottom: 72px;
 }
@@ -356,6 +353,8 @@ p {
 .project-item {
   border: 1px solid #e7e9fc;
   max-width: 360px;
+}
+.project-item:not(:last-child) {
   margin-right: 24px;
   margin-bottom: 48px;
 }
