@@ -83,12 +83,13 @@ section {
 }
 
 /*? Header section  */
-.header {
-  border-bottom: 1px solid #e7e9fc;
-}
 .header-flex {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+.header {
+  border-bottom: 1px solid #e7e9fc;
 }
 /* ?Logo */
 .logo-left {
