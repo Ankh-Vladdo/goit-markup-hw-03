@@ -103,6 +103,9 @@ section {
   color: var(--secondary-text-color);
 }
 /* ?Header-nav */
+.header-flex {
+  border-bottom: 1px solid #e7e9fc;
+}
 .header-nav .link {
   padding-top: 24px;
   padding-bottom: 24px;
@@ -133,6 +136,9 @@ section {
   font-style: normal;
   margin-left: auto;
 }
+.header-contacts-item:not(:last-child) {
+  margin-right: 40px;
+}
 
 .header-contacts:hover,
 .header-contacts:focus {
@@ -150,11 +156,12 @@ section {
 
 /* ?Hero section */
 .hero {
+  padding-top: 188px;
+  padding-bottom: 188px;
   background-color: var(--secondary-bg-color);
 }
 .hero-title {
   max-width: 496px;
-  padding-top: 188px;
   margin-bottom: 48px;
   margin-left: auto;
   margin-right: auto;
