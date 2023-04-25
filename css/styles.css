@@ -389,14 +389,11 @@ section {
   display: flex;
   flex-wrap: wrap;
 }
-.project-img {
-  margin-bottom: 32px;
-}
 .project-subtitle {
   margin-bottom: 8px;
 }
 .project-item {
-  flex-basis: calc((100%-48)/3);
+  flex-basis: calc((100%-48) / 3);
   max-width: 360px;
   margin-right: 24px;
   margin-bottom: 48px;
@@ -416,8 +413,6 @@ section {
   color: var(--secondary-text-color);
 }
 .project-text {
-  margin-bottom: 32px;
-
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
