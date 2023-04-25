@@ -8,7 +8,7 @@
   --secondary-text-color: #2e2f42;
   --accent-color: #4d5ae5;
   --secondary-accent-color: #404bbf;
-  --border-btn-portfolio-color: #e7e9fc;
+  --border-portfolio-color: #e7e9fc;
 }
 
 /* *Скидання стилів */
@@ -359,7 +359,7 @@ section {
   padding-bottom: 12px;
   padding-left: 24px;
   padding-right: 24px;
-  border: 1px solid var(--border-btn-portfolio-color);
+  border: 1px solid var(--border-portfolio-color);
 
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -378,7 +378,7 @@ section {
 /* ?Project Cards */
 .container-name-category {
   padding: 32px 16px;
-  border: 1px solid #e7e9fc;
+  border: 1px solid var(--border-portfolio-color);
   border-top: none;
 }
 .project {
@@ -396,7 +396,7 @@ section {
   margin-bottom: 8px;
 }
 .project-item {
-  border: 1px solid #e7e9fc;
+  flex-basis: calc((100%-48)/3);
   max-width: 360px;
   margin-right: 24px;
   margin-bottom: 48px;
